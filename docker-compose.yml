@@ -27,10 +27,9 @@ services:
       volumes: 
         - mongo-db:/data/db 
       environment: 
-        - MONGO_USER=sairam
-        - MONGO_PASSWORD=sairam
+        - MONGO_USER=${MONGO_USER}
+        - MONGO_PASSWORD=${MONGO_PASSWORD}
   
-
   redis:
     image: redis:6-alpine
 
